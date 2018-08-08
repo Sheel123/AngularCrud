@@ -1,0 +1,24 @@
+
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Search By Name" style="width: 300px;" [(ngModel)]="searchTerm"/>
+</div>
+
+<div class="panel panel-primary" *ngFor="let employee of employees | employeeFilter: searchTerm">
+    <div (click)="onClick(employee.id)" class="pointerCursur">
+    <app-display-employee [employee]="employee" [isVisible]="true"></app-display-employee>
+  </div>
+</div>
+<!-- <button class="btn btn-primary" (click)="onNextclick()">Next Employee</button>
+<br/>
+<br/>
+    <app-display-employee [employee]="employeeToDisplay"></app-display-employee>
+    <br/> -->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3 class="h3Class">Life of employee in Xuber</h3>
+<br/>
+<youtube-player width="500" [videoId]="id" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+</youtube-player>
