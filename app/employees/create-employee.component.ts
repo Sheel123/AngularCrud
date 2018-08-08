@@ -61,6 +61,7 @@ export class CreateEmployeeComponent implements OnInit {
     this.createEmployeeForm.reset();
     this._router.navigate(['list']);
     console.log(this.employee);
+    console.log('lets check status of Git')
   }
 
 }
